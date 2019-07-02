@@ -23,7 +23,7 @@ public class EXAMENJAVA {
         ArrayList<String> nomb = new ArrayList<String>();
         ArrayList<Float> t = new ArrayList<Float>();
         ArrayList<Float> v = new ArrayList<Float>();
-        int op = 1;
+        int mejor=0,op = 1;
         float vac=0;
         
        
@@ -39,7 +39,20 @@ public class EXAMENJAVA {
                 vac =vac + t.get(t.size()-1);
             }}
         
+        vac = vac / t.size();
+        int i=0, cont=0;
+        for(; i<v.size(); i++){
+            
+            if(v.get(i)>v.get(mejor)){
+                mejor = i;
+            }
+            if(t.get(i)>vac){
+                cont=cont+1;
+            }
+        System.out.println(nomb.get(i) + " " + v.get(i) + " " + t.get(i));
+        } 
         
+      
     }
     
 }
