@@ -49,6 +49,8 @@ public class EXAMENJAVA {
             if(t.get(i)>vac){
                 cont=cont+1;
             }
+             System.out.println(nomb.get(i) + " " + v.get(i) + " " + t.get(i));
+
         } 
         System.out.println("Promedio: " + vac);
         System.out.println("El más rápido es " + nomb.get(mejor) + " lo logro en " + t.get(mejor) + " a una velocidad de " + v.get(mejor));
